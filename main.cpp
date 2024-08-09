@@ -38,7 +38,7 @@ class Layer{
             for (int i = 0; i < x; i++){
                 tmp.clear();
                 for (int j = 0; j < n; j++){ 
-                    srand(time(0));
+                    srand(time(0)+i+j);
                     tmp.push_back(rand_float());
                 }
                 w.push_back(tmp);
